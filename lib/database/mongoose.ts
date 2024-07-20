@@ -20,6 +20,7 @@ if(!cached){
 }
 
 export const connectToDatabase=async()=>{
+    console.log("connectToDatabase")
     // if there is already an cached connection with db
     if(cached.conn)return cached.conn;
     // if there is no mongoDB_URL
